@@ -52,11 +52,6 @@ ul li {
     border-bottom: 2px solid black;
 }
 
-.nav-wrap {
-    display: flex;
-    width: 100%;
-}
-
 .logo {
     height: 55px;
 }
