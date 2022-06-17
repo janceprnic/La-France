@@ -1,4 +1,4 @@
-/*CSS for the "main" elements of both pages*/
+/*CSS za "main" elemente svih stranica*/
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ ul li {
     list-style: none;
 }
 
-/*CSS for the main page*/
+/*CSS za glavnu stranicu*/
 .main-navbar {
     display: flex;
     position: fixed;
@@ -195,7 +195,7 @@ ul li {
     font-weight: bold;
 }
 
-/*Responsive design for the main page*/
+/*Responsive design za glavnu stranicu*/
 @media (max-width: 1000px) {
     .main-navbar {
         position: absolute;
@@ -265,7 +265,7 @@ ul li {
     }
 }
 
-/*CSS for the about page*/
+/*CSS za about stranicu*/
 .about-container {
     max-width: 1000px;
     max-height: 100%;
@@ -312,7 +312,7 @@ ul li {
     width: 475px;
 }
 
-/*Responsive design for the about page*/
+/*Responsive design za about stranicu*/
 @media (max-width: 1000px) {
     .about-img {
         width: 400px;
