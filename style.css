@@ -1,0 +1,356 @@
+/*CSS for the "main" website elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(118,149,167,255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 7.5px;
+    background-color: darkslategray;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 7.5px;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+/*CSS for the main page*/
+.main-navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0.5rem;
+    background-color: cadetblue;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    height: 55px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.text-wrap {
+    width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #95b0b1;
+    border: 1px solid white;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
+
+.text-wrap h3 {
+    font-size: 20px;
+}
+
+.text-wrap p {
+    font-size: 18px;
+}
+
+.img-container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.zastava {
+    height: 225px;
+    width: 200px;
+}
+
+.grb {
+    height: 225px;
+}
+
+.bastilla {
+    height: 220px;
+    width: 355px;
+}
+
+.napoleon {
+    height: 220px;
+}
+
+.karte {
+    width: 300px;
+    height: 300px;
+}
+
+.headings {
+    max-width: 95%;
+    min-width: 95%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background-color: cadetblue;
+    border: 1px solid black;
+    box-shadow: rgb(71, 107, 146) 0px 20px 30px -10px;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-img {
+    display: none;
+    height: 30px;
+    width: 30px;
+}
+
+.go-up-container {
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+}
+
+.go-up {
+    height: 55px;
+    width: 55px;
+}
+
+.sec-nav-container {
+    max-width: 100%;
+    background-color: cadetblue;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-top: 2px solid black;
+}
+
+.sec-nav-container a {
+    text-decoration: underline;
+}
+
+.sec-nav-container a:hover {
+    color: white;
+}
+
+.section1 {
+    padding: 1rem;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.section1 p {
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.section1 a {
+    font-size: 16px;
+}
+
+.section2 {
+    padding: 1rem;
+    text-align: center;
+}
+
+.section2 a {
+    font-weight: bold;
+}
+
+/*Responsive design for the main page*/
+@media (max-width: 1000px) {
+    .main-navbar {
+        position: absolute;
+    }
+
+    .main-navbar a {
+        display: none;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .nav-img {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-container {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+        justify-items: center;
+    }
+
+    .zastava {
+        height: 175px;
+        width: 150px;
+    }
+
+    .grb {
+        height: 175px;
+    }
+
+    .bastilla {
+        height: 170px;
+        width: 290px;
+    }
+
+    .napoleon {
+        height: 200px;
+    }
+
+    .karte {
+        height: 275px;
+        width: 275px;
+    }
+}
+
+@media (max-width: 525px) {
+    .sec-nav-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section1 {
+        border: none;
+    }
+
+    .section2 {
+        border-top: 2px solid black;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/*CSS za about page*/
+.about-container {
+    max-width: 1000px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.go-back-container {
+    height: 55px;
+    width: 55px;
+    margin: 0 auto;
+}
+
+.go-back {
+    height: 55px;
+}
+
+.about-heading {
+    max-width: 1000px;
+    min-width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: cadetblue;
+    border: 1px solid black;
+    box-shadow: rgb(71, 107, 146) 0px 20px 30px -10px;
+    text-align: center;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+.about-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    align-items: center;
+    justify-items: center;
+}
+
+.about-img {
+    width: 475px;
+}
+
+/*Responsive design for the about page*/
+@media (max-width: 1000px) {
+    .about-img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    .about-img {
+        width: 300px;
+    }
+}
+
+@media (max-width: 655px) {
+    .about-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-heading {
+        max-width: 60%;
+    }
+
+    .go-back-container {
+        margin-left: -5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .about-heading {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 335px) {
+    .about-img {
+        width: 285px;
+    }
+}
